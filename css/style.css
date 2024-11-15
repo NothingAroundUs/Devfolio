@@ -1,0 +1,231 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: rgb(243 243 243);
+}
+
+.navbar {
+    background-color: #000;
+    height: 60px;
+    padding: 0 20px;
+}
+
+.navbar-brand {
+    font-size: 24px;
+}
+
+.navbar-nav .nav-link {
+    font-size: 16px;
+    margin: 0 15px;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ddd;
+    text-decoration: none;
+}
+
+.navbar.bg-dark {
+    background-color: rgba(0 0 0 0.8) !important;
+}
+
+
+.hero-section {
+    background: url('../img/hero-bg.jpg') no-repeat center center/cover fixed;
+    height: 100vh;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+.hero-section .container {
+    z-index: 2;
+}
+
+.lead {
+    font-size: 24px;
+    font-weight: 300;
+    border-right: 0.15em solid white;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    animation: blink-caret 0.75s step-end infinite;
+}
+
+.typing-animation {
+    animation: typing 3s steps(30, end) forwards, blink-caret 0.75s step-end infinite;
+}
+
+.nav-dd-menu {
+    z-index: 1050;
+}
+
+.nav-dd-menu {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.nav-dd-menu.show {
+    display: block;
+}
+
+.nav-dd-menu.showing {
+    animation: slideDown 0.3s ease forwards;
+}
+
+/* .about {
+    background-color: #f3f3f3
+} */
+
+.about .progress-section .progress .progress-bar {
+    border-radius: 0px;
+}
+
+.row i {
+    font-size: 40px;
+}
+
+.icon-circle {
+    padding: 50px;
+    font-size: 36px;
+    width: 80px;
+    height: 80px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-width: 200px;
+    transition: .8s;
+    border: 10px solid;
+}
+
+.row .service:hover i {
+    background-color: darkblue;
+    border-color: rgb(196 220 247) !important;
+    color: #fff;
+}
+
+.analysis {
+    background: url('../img/counters-bg.jpg') no-repeat center center/cover fixed;
+}
+
+.transformed {
+    transition: 1s;
+}
+
+.transformed:hover {
+    transform: scale(1.2);
+}
+
+.testimonial {
+    background: url('../img/overlay-bg.jpg') no-repeat center center/cover fixed;
+}
+
+.custom-indicators {
+    bottom: -30px;
+}
+
+.custom-indicators button {
+    max-width: 10px;
+    max-height: 10px;
+    min-width: 10px;
+    min-height: 10px;
+    border-radius: 50%;
+}
+
+.custom-indicators .active {
+    background-color: white;
+}
+
+.centered-badge {
+    bottom: -15px;
+    padding: 0.5rem 0.75rem;
+    font-size: 0.75rem;
+}
+
+.blog-title {
+    color: black;
+    transition: 1s;
+}
+
+.blog-title:hover {
+    color: rgb(0 103 255);
+}
+
+.contact {
+    background: url('../img/overlay-bg.jpg') no-repeat center center/cover fixed;
+}
+
+.social-icon {
+    width: 50px;
+    height: 50px;
+    border: 5px solid #007bff;
+    color: #000;
+    border-radius: 50%;
+    font-size: 20px;
+    transition: all 1s;
+}
+
+.social-icon i {
+    font-size: 16px;
+}
+
+.social-icon:hover {
+    background-color: #007bff;
+    color: #fff;
+    border: 5px solid #fff;
+}
+
+/* Custom classes */
+
+.bg-opacity-100 {
+    --bs-bg-opacity: 1;
+}
+
+.bg-opacity-85 {
+    /* Extra for nav bar */
+    --bs-bg-opacity: .85;
+}
+
+.bg-opacity-75 {
+    --bs-bg-opacity: .75;
+}
+
+.bg-opacity-50 {
+    --bs-bg-opacity: .50;
+}
+
+.bg-opacity-25 {
+    --bs-bg-opacity: .25;
+}
+
+/* Animations */
+@keyframes blink-caret {
+    50% {
+        border-color: transparent;
+    }
+}
+
+@keyframes slideDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* No need for media query responsive in this project */
